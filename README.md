@@ -82,14 +82,14 @@ npm -v
 1. Click the **Code** button on this repository
 2. Select **Download ZIP**
 3. Extract the ZIP file
-After extracting, open the folder named ``.
+After extracting, open the folder named `OTP_AUTH`.
 
 #### Option 2 :  Clone the Repository
 
 Open your terminal and run the following commands:
 ```bash
-git clone https://github.com/AMOG-M/.git
-cd 
+https://github.com/AMOG-M/OTP_AUTH.git
+cd OTP_AUTH
 ```
 
 ###2️⃣ Initialize Node Project
