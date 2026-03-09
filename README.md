@@ -20,11 +20,11 @@ Designed for **beginners and developers** who want to implement OTP login system
 
 ## 🗂 Project Structure
 otp-auth/
-├── backend/
-│ ├── server.js # Main server file
-│ ├── package.json # Node project configuration
-│ ├── node_modules/ # Installed packages
-│ └── .env # Environment variables
+└── backend/
+    ├── server.js        # Main server file
+    ├── package.json     # Node project configuration
+    ├── node_modules/    # Installed packages
+    └── .env             # Environment variables
 
 
 ---
