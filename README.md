@@ -1,122 +1,54 @@
-==================================================
-OTP AUTHENTICATION PROJECT
-Backend Setup Guide
-==================================================
+# 🟢 OTP AUTHENTICATION BACKEND
+
+A simple **OTP-based authentication backend** built with **Node.js** and **Express**.  
+This project demonstrates sending OTPs via email and setting up a clean backend server for authentication.
+
+Designed for **beginners and developers** who want to implement OTP login systems.
+
+---
+
+## 🚀 Features
+
+- 🔹 Express backend server  
+- 🔹 CORS enabled for frontend communication  
+- 🔹 Environment variables using `.env`  
+- 🔹 Send OTPs via email using Nodemailer  
+- 🔹 Automatic server reload during development with Nodemon  
+- 🔹 Beginner-friendly and easy to understand  
+
+---
+
+## 🗂 Project Structure
+otp-auth/
+├── backend/
+│ ├── server.js # Main server file
+│ ├── package.json # Node project configuration
+│ ├── node_modules/ # Installed packages
+│ └── .env # Environment variables
 
 
-###############################
-STEP 1 — Create Backend Project
-###############################
+---
 
+## 🛠 Step 1 — Setup Backend
 
---------------------------------
-1. Create a New Project Folder
---------------------------------
+### 1️⃣ Create Project Folder
 
-Open the terminal and run the following commands:
+Open the terminal and run:
 
-    mkdir otp-auth
-    cd otp-auth
-    mkdir backend
-    cd backend
+```bash
+mkdir otp-auth
+cd otp-auth
+mkdir backend
+cd backend
+```
 
+2️⃣ Initialize Node Project
+``` bash
+npm init -y
+```
 
---------------------------------
-2. Initialize Node.js Project
---------------------------------
-
-Run the command:
-
-    npm init -y
-
-This will create a file called:
-
-    package.json
-
-The package.json file stores your project configuration,
-dependencies, scripts, and project metadata.
-
-
---------------------------------
-3. Install Required Packages
---------------------------------
-
-Run the following command:
-
-    npm install express cors dotenv nodemailer
-
-Install nodemon as a development dependency:
-
-    npm install -D nodemon
-
-
---------------------------------
-4. Package Purpose
---------------------------------
-
-express
-    Used to create the backend server.
-
-cors
-    Allows communication between frontend and backend.
-
-dotenv
-    Loads environment variables from the .env file.
-
-nodemailer
-    Used to send OTP emails.
-
-nodemon
-    Automatically restarts the server when code changes.
-
-
---------------------------------
-5. Add Dev Script
---------------------------------
-
-Open package.json and modify the scripts section:
-
-    "scripts": {
-        "dev": "nodemon server.js"
-    }
-
-This allows you to start the server using:
-
-    npm run dev
-
-
---------------------------------
-6. Start the Server
---------------------------------
-
-Run:
-
-    npm run dev
-
-
---------------------------------
-7. Test the Server
---------------------------------
-
-Open your browser and go to:
-
-    http://localhost:5000
-
-
-If everything is correct, you should see:
-
-    Server is running
-
-
---------------------------------
-Important Note
---------------------------------
-
-nodemon automatically restarts the server whenever
-you update or save files. This helps during development
-because you do not need to manually restart the server.
-
-
-==================================================
-END OF STEP 1
-==================================================
+3️⃣ Install Required Packages
+```bash
+npm install express cors dotenv nodemailer
+npm install -D nodemon
+```
