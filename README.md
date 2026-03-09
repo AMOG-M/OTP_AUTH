@@ -1,36 +1,122 @@
-🟢 STEP 1 — Create Backend Project
-📌 1️⃣ Create a new folder
-
-Open terminal and run:
-mkdir otp-auth
-cd otp-auth
-mkdir backend
-cd backend
+==================================================
+OTP AUTHENTICATION PROJECT
+Backend Setup Guide
+==================================================
 
 
-📌 2️⃣ Initialize Node project
-npm init -y 
-This creates package.json (your project config file).
-
-📌 3️⃣ Install required packages
-npm install express cors dotenv nodemailer
-npm install -D nodemon
-
-What each does:
-
-1.express → backend server
-2.cors → allow frontend to connect
-3. dotenv → read .env file
-4.nodemailer → send OTP email
+###############################
+STEP 1 — Create Backend Project
+###############################
 
 
-📌 6️⃣ Start the server
-npm run dev
+--------------------------------
+1. Create a New Project Folder
+--------------------------------
 
-Now open browser:
-http://localhost:5000
+Open the terminal and run the following commands:
 
-You should see:
-Server is running
+    mkdir otp-auth
+    cd otp-auth
+    mkdir backend
+    cd backend
 
-nodemon → auto restart server
+
+--------------------------------
+2. Initialize Node.js Project
+--------------------------------
+
+Run the command:
+
+    npm init -y
+
+This will create a file called:
+
+    package.json
+
+The package.json file stores your project configuration,
+dependencies, scripts, and project metadata.
+
+
+--------------------------------
+3. Install Required Packages
+--------------------------------
+
+Run the following command:
+
+    npm install express cors dotenv nodemailer
+
+Install nodemon as a development dependency:
+
+    npm install -D nodemon
+
+
+--------------------------------
+4. Package Purpose
+--------------------------------
+
+express
+    Used to create the backend server.
+
+cors
+    Allows communication between frontend and backend.
+
+dotenv
+    Loads environment variables from the .env file.
+
+nodemailer
+    Used to send OTP emails.
+
+nodemon
+    Automatically restarts the server when code changes.
+
+
+--------------------------------
+5. Add Dev Script
+--------------------------------
+
+Open package.json and modify the scripts section:
+
+    "scripts": {
+        "dev": "nodemon server.js"
+    }
+
+This allows you to start the server using:
+
+    npm run dev
+
+
+--------------------------------
+6. Start the Server
+--------------------------------
+
+Run:
+
+    npm run dev
+
+
+--------------------------------
+7. Test the Server
+--------------------------------
+
+Open your browser and go to:
+
+    http://localhost:5000
+
+
+If everything is correct, you should see:
+
+    Server is running
+
+
+--------------------------------
+Important Note
+--------------------------------
+
+nodemon automatically restarts the server whenever
+you update or save files. This helps during development
+because you do not need to manually restart the server.
+
+
+==================================================
+END OF STEP 1
+==================================================
